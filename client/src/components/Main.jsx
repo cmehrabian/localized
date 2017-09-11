@@ -4,7 +4,7 @@ import NotFound from './404.jsx';
 import { Switch, Route } from 'react-router-dom';
 
 const Main = (props) => (
-  <main>
+  <main style={{width: '100%'}}>
     <Switch>
       <Route exact path='/' render={() => <Home  />} />
       <Route render={() => <NotFound />} />

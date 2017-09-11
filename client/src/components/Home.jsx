@@ -5,13 +5,14 @@ import UploadMedia from './UploadMedia.jsx';
 import { Layout } from 'antd';
 const { Header, Sider, Content } = Layout;
 import axios from 'axios';
+import family from '../dummyfamilydata';
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       posts: [],
-      familyMembers: [],
+      familyMembers: family,
       family_id: 1
     };
     this.getAllPostsByFamily = this.getAllPostsByFamily.bind(this);
@@ -52,7 +53,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    this.getAllFamilyMembers();
+    // this.getAllFamilyMembers();
     this.getAllPostsByFamily();
   }
 

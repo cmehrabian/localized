@@ -11,7 +11,7 @@
     "test-db": "NODE_ENV=test mocha ./db --recursive",
     "test-frontend": "jest --testPathPattern ./__test__/",
     "build": "webpack --watch",
-    "heroku-postbuild": "npm run build:prod && npm run rollback && npm run migrate",
+    "heroku-postbuild": "npm run build:prod && npm run migrate",
     "build:prod": "webpack -p"
   },
   "author": "Hack Reactor",

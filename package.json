@@ -5,7 +5,6 @@
     "start-dev": "nodemon server",
     "start": "node server/index.js",
     "migrate": "knex migrate:latest",
-    "rollback": "knex migrate:rollback",
     "test": "mocha ./server --recursive && mocha ./db --recursive && jest --testPathPattern ./__test__/",
     "test-server": "mocha ./server --recursive",
     "test-db": "NODE_ENV=test mocha ./db --recursive",

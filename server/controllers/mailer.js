@@ -17,7 +17,7 @@ module.exports.inviteByEmail = (req, res) => {
     }
   });
 
-  var link = `http://localhost:3000/signup?invitedBy=${fromEmail}&familyid=1&email=${toEmail}`;
+  var link = `http://welcomelocalized.herokuapp.com/signup?invitedBy=${fromEmail}&familyid=1&email=${toEmail}`;
   var email = emailTemplate(link);
 
   var mailOptions = {
